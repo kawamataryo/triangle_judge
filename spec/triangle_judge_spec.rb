@@ -10,4 +10,7 @@ RSpec.describe "triangle_judge" do
   it "不等辺三角形" do
     expect(triangle_judge(2,3,4)).to eq("不等辺三角形ですね！")
   end
+  it "三角形として成立しない" do
+    expect(triangle_judge(1,2,3)).to eq("三角形じゃないです＞＜")
+  end
 end
