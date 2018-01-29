@@ -1,5 +1,5 @@
 def triangle_judge(*sides)
-  if sides.max < sides.inject(:+) - sides.max
+  if sides.max < sides.inject(:+) - sides.max && sides.count == 3
     if sides.uniq.size == 1
       "正三角形ですね！"
     elsif sides.uniq.size == 2
